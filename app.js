@@ -8,15 +8,17 @@ console.log(randomDuck());
 
 // Changes image of duck on click
 
-function changeImage() {
-  if (document.getElementById("duck3").src === "images/duck-inactive.png") {
-    document.getElementById("duck3").src = "images/duck.png";
-  // } else {
-  //   document.getElementById(imageId).src = "images/duck-inactive.png";
+function changeImage(imageId) {
+  if (document.getElementById(imageId).src == "./images/duck-inactive.png") {
+    document.getElementById(imageId).src = "./images/duck.png";
+  } else if (document.getElementById(imageId).src == "./images/duck.png"){
+    document.getElementById(imageId).src = "./images/duck-inactive.png";
   }
 }
 
-changeImage();
+console.log(document.getElementById("duck2").src);
+
+changeImage("duck2");
 
 
 // document.getElementById("duck3").src = "images/duck.png";
