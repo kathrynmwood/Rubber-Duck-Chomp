@@ -6,32 +6,29 @@ function randomDuck() {
 
 console.log(randomDuck());
 
-// Changes image of duck on click
+// Displays randomDuck
 
-// function changeImage(imageId) {
-//   if (document.getElementById(imageId).src == "./images/duck-inactive.png") {
-//     document.getElementById(imageId).src = "./images/duck.png";
-//   } else if (document.getElementById(imageId).src == "./images/duck.png"){
-//     document.getElementById(imageId).src = "./images/duck-inactive.png";
-//   }
-// }
-
-
-
-function changeImage(imageId) {
-  if (document.getElementById(imageId).src == "http://i.imgur.com/GyAkOyQ.png") {
-    document.getElementById(imageId).src = "http://i.imgur.com/sAnalhL.png";
-  } else if (document.getElementById(imageId).src == "http://i.imgur.com/sAnalhL.png"){
-    document.getElementById(imageId).src = "http://i.imgur.com/GyAkOyQ.png";
-  }
+function displayDuck() {
+  document.getElementById("duck" + randomDuck()).style.visibility = "visible";
 }
 
+displayDuck();
 
-console.log(document.getElementById("duck5").src);
 
-changeImage("duck5");
-changeImage("duck9");
 
-// document.getElementById("duck3").src = "images/duck.png";
 
-// document.getElementById("duck3").src = "images/duck.png";
+
+
+
+
+
+
+// Changes image of duck
+
+// function changeImage(imageId) {
+//   if (document.getElementById(imageId).src == "http://i.imgur.com/GyAkOyQ.png") {
+//     document.getElementById(imageId).src = "http://i.imgur.com/sAnalhL.png";
+//   } else if (document.getElementById(imageId).src == "http://i.imgur.com/sAnalhL.png"){
+//     document.getElementById(imageId).src = "http://i.imgur.com/GyAkOyQ.png";
+//   }
+// }
