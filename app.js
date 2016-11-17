@@ -1,3 +1,9 @@
+function init() {
+   console.log("Hello from JS!")
+}
+
+window.onload = init;
+
 // Selects random number from 1 to 9
 
 function randomDuck() {
@@ -6,13 +12,38 @@ function randomDuck() {
 
 console.log(randomDuck());
 
+// Sets current duck
+
+var currentDuck = document.getElementById("duck" + randomDuck());
+
+
 // Displays randomDuck
 
+// function displayDuck() {
+//   document.getElementById("duck" + randomDuck()).style.visibility = "visible";
+// }
+
 function displayDuck() {
-  document.getElementById("duck" + randomDuck()).style.visibility = "visible";
+  currentDuck.style.visibility = "visible";
 }
 
 displayDuck();
+
+// Hide Duck
+
+// function hideDuck() {
+//   document.getElementById("duck" + randomDuck()).style.visibility = "hidden";
+// }
+
+function hideDuck() {
+  currentDuck.style.visibility = "hidden";
+}
+
+// Event listener for images
+
+
+document.getElementById("h1").addEventListener("click", alert("hello"));
+
 
 
 // Checks visibility of duck and changes it
@@ -36,7 +67,7 @@ function onTimer() {
 
 // Functions to Build:
 
-// 
+//
   //
 
 //
