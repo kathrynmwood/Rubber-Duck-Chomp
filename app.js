@@ -15,8 +15,31 @@ function displayDuck() {
 displayDuck();
 
 
+// Checks visibility of duck and changes it
+
+// timer
+
+var secondsAlloted = 30;
+function onTimer() {
+  document.getElementById('mycounter').innerHTML = secondsAlloted;
+  secondsAlloted--;
+  if (secondsAlloted < 0) {
+    alert('Your score is SCORE VARIABLE HERE.');  // Create conditional here depending on score
+  }
+  else {
+    setTimeout(onTimer, 1000);
+  }
+}
 
 
+
+
+// Functions to Build:
+
+// 
+  //
+
+//
 
 
 
