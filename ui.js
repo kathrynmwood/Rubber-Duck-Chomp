@@ -18,5 +18,5 @@ changeDuckState(duckGrid);
 // Function that displays current Score
 
 function displayScore() {
-  document.getElementById("yourScore").innerHTML = currentScore;
+  document.getElementById("yourScore").innerHTML = "Your Score: " + currentScore;
 }
