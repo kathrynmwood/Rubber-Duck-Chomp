@@ -1,20 +1,14 @@
-function init() {
-   console.log("Hello from JS!")
-}
-
-window.onload = init;
-
 // Selects random number from 1 to 9
 
-function randomDuck() {
-    return Math.floor((Math.random() * 9) + 1);
+function randomNum() {
+    return Math.floor((Math.random() * 9));
 }
 
-console.log(randomDuck());
+console.log(randomNum());
 
 // Sets current duck
 
-var currentDuck = document.getElementById("duck" + randomDuck());
+var activeDuck = grid[randomNum()];
 
 
 // Displays randomDuck

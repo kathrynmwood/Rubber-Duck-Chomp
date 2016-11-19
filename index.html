@@ -11,28 +11,33 @@
     <div id="booth">
 
       <div class="rows">
-        <div class="ducks"><img class= "targets" id = "duck1" src="images/duck.png"></div>
-        <div class="ducks"><img class= "targets" id = "duck2" src="images/duck.png"></div>
-        <div class="ducks"><img class= "targets" id = "duck3" src="images/duck.png"></div>
+        <div class="inactive" id = "0" onclick = "shootDuck(0)"></div>
+        <div class="inactive" id = "1" onclick = "shootDuck(1)"></div>
+        <div class="inactive" id = "2" onclick = "shootDuck(2)"></div>
       </div>
       <div class="rows">
-        <div class="ducks"><img class= "targets" id = "duck4" src="images/duck.png"></div>
-        <div class="ducks"><img class= "targets" id = "duck5" src="images/duck.png"></div>
-        <div class="ducks"><img class= "targets" id = "duck6" src="images/duck.png"></div>
+        <div class="inactive" id = "3" onclick = "shootDuck(3)"></div>
+        <div class="inactive" id = "4" onclick = "shootDuck(4)"></div>
+        <div class="inactive" id = "5" onclick = "shootDuck(5)"></div>
       </div>
       <div class="rows">
-        <div class="ducks"><img class= "targets" id = "duck7" src="images/duck.png"></div>
-        <div class="ducks"><img class= "targets" id = "duck8" src="images/duck.png"></div>
-        <div class="ducks"><img class= "targets" id = "duck9" src="images/duck.png"></div>
+        <div class="inactive" id = "6" onclick = "shootDuck(6)"></div>
+        <div class="inactive" id = "7" onclick = "shootDuck(7)"></div>
+        <div class="inactive" id = "8" onclick = "shootDuck(8)"></div>
       </div>
 
+    </div>
+
+    <div class= "scoreboard">
+      <h2>Your Score:</h2>
+      <h3 id="yourScore"></h3>
     </div>
 
     <button onclick="onTimer()">Start</button>
     <div id="mycounter"></div>
 
 
-    <script src="app.js"></script>
-
+<script src="logic.js"></script>
+<script src="ui.js"></script>
   </body>
 </html>

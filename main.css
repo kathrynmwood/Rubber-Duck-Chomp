@@ -16,7 +16,6 @@ h1 {
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 0;
-  background-color: black;
   background-image: url("images/booth-backdrop.jpeg");
   background-size: cover;
   cursor: url("images/cursor-scope.png"), auto;
@@ -34,18 +33,36 @@ h1 {
   padding: 10px;
 }
 
-.ducks {
+/*@keyframes duckMoves {
+  0%   {left:0px;}
+  25%  {left:200px;}
+  50%  {left:200px;}
+  75%  {left:0px;}
+  100% {left:0px;}
+}*/
+
+.active {
   width: 33%;
+  height: 130px;
   display: flex;
   justify-content: center;
+  position: relative;
+  background-image: url("images/duck.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: duckMoves;
+  animation-duration: 4s;
 }
 
-.targets {
-  max-width: 100%;
-  max-height: 125px;
+.inactive {
+  width: 33%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  /*background-image: url("images/duck.png");*/
+  /*background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;*/
   visibility: hidden;
-}
-
-p {
-  text-align: center;
 }
