@@ -3,7 +3,7 @@
 
 For project #1, I created a game of Rubber Ducky Shootout.
 
-PUT DESCRIPTION OF GAME HERE.
+The user clicks the 'start' button to begin game. The objective is to shoot (click on) as many ducks as possible in 30 seconds. The user earns one point per duck shot. When time expires, a score alert is displayed with the user's final score.
 
 **Live site:** <https://kathrynmwood.github.io/wdi-project-1/>
 
