@@ -9,6 +9,8 @@
   <body>
     <h1 id="h1">Rubber Duck Shootout</h1>
 
+    <button id="start" onclick="beginGame()">begin</button>
+
     <div id="booth">
 
       <div class="rows">
@@ -29,13 +31,13 @@
 
     </div>
 
-    <div class= "scoreboard">
-      <h2 id="yourScore">Your Score: </h2>
+    <div class= "displays">
+      <h2 id="yourScore">Your Score: 0</h2>
     </div>
 
-    <button onclick="onTimer()">Start</button>
-    <div id="mycounter"></div>
-
+    <div class="displays">
+      <h2 id="mycounter">Seconds Remaining: 30</h2>
+    </div>
 
 <script src="logic.js"></script>
 <script src="ui.js"></script>

@@ -46,6 +46,32 @@ function addPoint() {
   currentScore = currentScore + 1;
 }
 
+// Begin game when "Start" button is clicked
+
+function beginGame() {
+  onTimer();
+  document.getElementById('start').innerHTML = 'play again';
+  currentScore = 0;
+  document.getElementById('yourScore').innerHTML = 'Your Score: ' + currentScore;
+}
+
+
+// timer
+
+var secondsAlloted = 30;
+
+function onTimer() {
+  document.getElementById('mycounter').innerHTML = 'Seconds Remaining: ' + secondsAlloted;
+  secondsAlloted--;
+  if (secondsAlloted == 0) {
+    alert('Your final score is ' + currentScore);  // Create conditional here depending on score
+    secondsAlloted = 30;
+  }
+  else {
+    setTimeout(onTimer, 1000);
+  }
+}
+
 
 // Switch true grid item back to false onclick
 

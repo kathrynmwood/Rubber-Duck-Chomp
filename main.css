@@ -1,23 +1,38 @@
 body {
   background-image: url("images/booth-backdrop.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Special Elite', serif;
+  color: #ffffff;
 }
 
 h1 {
   text-align: center;
-  font-family: 'Cabin', serif;
-  font-size: 2.5em;
-  letter-spacing: 3px;
+  font-family: 'Bangers', serif;
+  font-size: 3em;
+  letter-spacing: 6px;
   text-transform: uppercase;
   padding: 10px;
   margin: auto;
-  background-color: #ffffff;
+  background-color: #F2871C;
+  border-radius: 12px;
+}
+
+button {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Special Elite', serif;
+  border: none;
+  font-size: 2em;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
 }
 
 #booth {
   height: 450px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 0;
   cursor: url("images/cursor-scope.png"), auto;
 }
@@ -27,22 +42,14 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  /*margin-left: 10%;
+  margin-right: 10%;*/
   padding: 10px;
 }
 
-/*@keyframes duckMoves {
-  0%   {left:0px;}
-  25%  {left:200px;}
-  50%  {left:200px;}
-  75%  {left:0px;}
-  100% {left:0px;}
-}*/
-
 .active {
   width: 33%;
-  height: 130px;
+  height: 100px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -51,12 +58,14 @@ h1 {
   background-repeat: no-repeat;
   background-size: contain;
   animation-name: duckMoves;
-  animation-duration: 4s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .inactive {
   width: 33%;
-  height: 130px;
+  height: 100px;
   display: flex;
   justify-content: center;
   /*background-image: url("images/duck.png");*/
@@ -66,11 +75,60 @@ h1 {
   visibility: hidden;
 }
 
-.scoreboard {
-  background-color: #ffffff;
-  display: inline-block;
-  padding: 5px;
-  margin: 10px;
-  width: 33%;
+#yourScore {
+  position: fixed;
+  bottom: 0px;
+  left: 10px;
+  background-color: #000000;
+  padding: 20px;
   text-align: center;
+  border-radius: 12px;
+}
+
+#mycounter {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+@keyframes duckMoves {
+  0%   {left:0px;}
+  25%  {left:200px;}
+  50%  {left:200px;}
+  75%  {left:0px;}
+  100% {left:0px;}
+}
+
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  #yourScore {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  #mycounter {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .active {
+    height: 100px;
+  }
+
+  .inactive {
+    height: 100px;
+  }
+
+  #booth {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
