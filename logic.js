@@ -52,7 +52,7 @@ function addPoint() {
 // Determine if yourScore is new highScore
 
 function newHighScore() {
-    document.getElementById('start').innerHTML = 'play again';
+    document.getElementById('start').innerHTML = 'Play Again';
     if (currentScore >= highScore) {
         highScore = currentScore;
         alert('New personal best = ' + highScore + '!!!!');
@@ -70,7 +70,7 @@ function beginGame() {
         console.log(duckGrid);
         changeDuckState(duckGrid);
         onTimer();
-        document.getElementById('start').innerHTML = 'shoot the ducks!';
+        document.getElementById('start').innerHTML = 'Shoot the ducks!';
         currentScore = 0;
         document.getElementById('yourScore').innerHTML = 'Your Score: ' + currentScore;
     }
