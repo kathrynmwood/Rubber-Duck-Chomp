@@ -44,6 +44,16 @@ console.log("RANDOM DUCK",randomDuck);
 
 console.log("DUCK GRID",duckGrid);
 
+// Set all ducks to false
+
+function ducksFalse(grid) {
+  for (var i = 0; i < grid.length; i++) {
+    grid[i] = false;
+  }
+  changeDuckState(grid);
+}
+
+
 // Add point to currentScore
 
 function addPoint() {
@@ -82,6 +92,7 @@ function onTimer() {
   if (secondsAlloted === 0) {
     timerRunning = false;
     newHighScore();
+    ducksFalse(duckGrid);
   }
   else {
     timerRunning = true;
