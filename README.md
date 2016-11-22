@@ -1,10 +1,10 @@
-# Rubber Ducky Shootout Project
+# Rubber Duck Chomp Project
 
 ## Overview
 
-For project #1, I created a game of Rubber Ducky Shootout.
+For project #1, I created a game of Rubber Duck Chomp.
 
-The user clicks the 'start' button to begin game. The objective is to shoot (click on) as many ducks as possible in 30 seconds. The user earns one point per duck shot. When time expires, a score alert is displayed with the user's final score.
+The user clicks the 'start' button to begin game. The objective is to chomp (click on) as many ducks as possible in 30 seconds. The user earns one point per duck chomped. When time expires, a score alert is displayed with the user's final score.
 
 **Live site:** <https://kathrynmwood.github.io/wdi-project-1/>
 

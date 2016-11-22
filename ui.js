@@ -51,5 +51,5 @@ var jaws = new Audio();
 jaws.src = "sounds/Jaws-theme-song/Jaws-theme-song.mp3";
 
 function playJaws() {
-  jaws.play();
+    jaws.play();
 }
