@@ -100,24 +100,27 @@ button {
         left: 0%;
     }
     25% {
-        left: 25%;
+        left: 15%;
         transform: rotateY(180deg);
     }
     50% {
-        left: 50%;
+        left: 0%;
     }
     75% {
-        left: 0%;
+        left: 15%;
     }
     100% {
         left: 0%;
     }
 }
 
-
 @media (max-width: 560px) {
     h1 {
         font-size: 2em;
+    }
+    #start {
+        font-size: 1em;
+        padding: 10px;
     }
     #yourScore {
         font-size: 1em;

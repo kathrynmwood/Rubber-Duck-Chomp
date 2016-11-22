@@ -32,7 +32,7 @@ var squeak = new Audio();
 squeak.src = "sounds/Squeaky-toy-sound-effect/Squeaky-toy-sound-effect.mp3";
 
 function playSqueakSound() {
-  squeak.play();
+    squeak.play();
 }
 
 
