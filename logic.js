@@ -34,8 +34,6 @@ function changeState(grid) {
     }
 }
 
-changeState(duckGrid);
-
 // Set all grid values to false
 
 function ducksFalse(grid) {
@@ -68,9 +66,11 @@ function newHighScore() {
 function beginGame() {
     if (timerRunning === false) {
         secondsAlloted = 30;
+        changeState(duckGrid);
+        console.log(duckGrid);
         changeDuckState(duckGrid);
         onTimer();
-        document.getElementById('start').innerHTML = 'shoot those ducks!';
+        document.getElementById('start').innerHTML = 'shoot the ducks!';
         currentScore = 0;
         document.getElementById('yourScore').innerHTML = 'Your Score: ' + currentScore;
     }
