@@ -6,6 +6,10 @@ var currentScore = 0;
 
 var highScore = 0;
 
+var secondsAlloted = 30;
+
+var timerRunning = false;
+
 console.log("LENGTH OF GRID",duckGrid.length);
 
 // Generate random number between 0 and 8
@@ -46,30 +50,45 @@ function addPoint() {
   currentScore = currentScore + 1;
 }
 
+// Determine if yourScore is new highScore
+
+function newHighScore() {
+  document.getElementById('start').innerHTML = 'play again';
+  if (currentScore >= highScore) {
+    highScore = currentScore;
+    alert('New personal best = ' + highScore + '!!!!');
+  } else {
+    alert('Your score = ' + currentScore);
+  }
+}
+
 // Begin game when "Start" button is clicked
 
 function beginGame() {
-  onTimer();
-  document.getElementById('start').innerHTML = 'play again';
-  currentScore = 0;
-  document.getElementById('yourScore').innerHTML = 'Your Score: ' + currentScore;
+  if (timerRunning === false) {
+    secondsAlloted = 30;
+    changeDuckState(duckGrid);
+    onTimer();
+    document.getElementById('start').innerHTML = 'shoot those ducks!';
+    currentScore = 0;
+    document.getElementById('yourScore').innerHTML = 'Your Score: ' + currentScore;
+  }
 }
 
 
 // timer
 
-var secondsAlloted = 30;
-
 function onTimer() {
-  document.getElementById('mycounter').innerHTML = 'Seconds Remaining: ' + secondsAlloted;
-  secondsAlloted--;
-  if (secondsAlloted == 0) {
-    alert('Your final score is ' + currentScore);  // Create conditional here depending on score
-    secondsAlloted = 30;
+  if (secondsAlloted === 0) {
+    timerRunning = false;
+    newHighScore();
   }
   else {
+    timerRunning = true;
     setTimeout(onTimer, 1000);
+    secondsAlloted--;
   }
+  document.getElementById('mycounter').innerHTML = 'Seconds Remaining: ' + secondsAlloted;
 }
 
 
@@ -85,6 +104,7 @@ function shootDuck(shotDuckIndex) {
       addPoint();
       console.log("Current Score", currentScore);
       displayScore();
+      playSound();
     }
   }
 }

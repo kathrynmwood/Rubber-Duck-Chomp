@@ -12,11 +12,19 @@ function changeDuckState(grid) {
 }
 
 
-changeDuckState(duckGrid);
+// changeDuckState(duckGrid);
 
 
 // Function that displays current Score
 
 function displayScore() {
   document.getElementById("yourScore").innerHTML = "Your Score: " + currentScore;
+}
+
+// Play mp3
+
+var sqeak = new Audio();
+squeak.src = "Gunshot-sound/Gunshot-sound.mp3";
+function playSound() {
+    squeak.play();
 }
