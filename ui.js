@@ -26,6 +26,16 @@ function playShotSound() {
     gunshot.play();
 }
 
+// Play squeak mp3
+
+var squeak = new Audio();
+squeak.src = "sounds/Squeaky-toy-sound-effect/Squeaky-toy-sound-effect.mp3";
+
+function playSqueakSound() {
+  squeak.play();
+}
+
+
 // Play epic battle music mp3
 
 var epicBattle = new Audio();

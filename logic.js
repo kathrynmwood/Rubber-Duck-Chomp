@@ -104,6 +104,7 @@ function shootDuck(shotDuckIndex) {
             addPoint();
             console.log("Current Score", currentScore);
             displayScore();
+            playSqueakSound();
             playShotSound();
         }
     }
