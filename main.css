@@ -1,7 +1,12 @@
-body {
-  background-image: url("images/booth-backdrop.jpeg");
+html {
+  background: url("images/booth-backdrop.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
+}
+
+body {
   font-family: 'Special Elite', serif;
   color: #ffffff;
 }
@@ -105,10 +110,6 @@ button {
 
 
 @media (max-width: 560px) {
-  html {
-    min-height: 100%;
-  }
-
   h1 {
     font-size: 2em;
   }
