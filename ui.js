@@ -17,11 +17,20 @@ function displayScore() {
     document.getElementById("yourScore").innerHTML = "Your Score: " + currentScore;
 }
 
-// Play mp3
+// Play gunshot mp3
 
 var gunshot = new Audio();
 gunshot.src = "sounds/Gunshot-sound/Gunshot-sound.mp3";
 
-function playSound() {
+function playShotSound() {
     gunshot.play();
+}
+
+// Play epic battle music mp3
+
+var epicBattle = new Audio();
+epicBattle.src = "sounds/Epic-battle-music-grzegorz-majcherczyk-heroica/Epic-battle-music-grzegorz-majcherczyk-heroica.mp3"
+
+function playGameSound() {
+    epicBattle.play();
 }

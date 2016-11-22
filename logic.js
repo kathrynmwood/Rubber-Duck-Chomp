@@ -87,6 +87,7 @@ function onTimer() {
         timerRunning = true;
         setTimeout(onTimer, 1000);
         secondsAlloted--;
+        playGameSound();
     }
     document.getElementById('mycounter').innerHTML = 'Seconds Remaining: ' + secondsAlloted;
 }
@@ -103,7 +104,7 @@ function shootDuck(shotDuckIndex) {
             addPoint();
             console.log("Current Score", currentScore);
             displayScore();
-            playSound();
+            playShotSound();
         }
     }
 }

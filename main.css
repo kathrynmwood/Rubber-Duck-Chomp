@@ -101,9 +101,12 @@ button {
     }
     25% {
         left: 25%;
+        top: 200px;
+        transform: rotateY(180deg);
     }
     50% {
-        left: 20%;
+        left: 0%;
+        top: 100%;
     }
     75% {
         left: 0%;
