@@ -11,9 +11,9 @@ PUT DESCRIPTION OF GAME HERE.
 
   * Languages - HTML5, CSS3, Javascript
   * Design - Google Fonts, Adobe Illustrator
-  * Sound - Orange Free Sounds
+  * Sound - MP3
   * Project Planning & User Stories - [Trello](https://trello.com/b/L4hLFyAY/wdi-project-1)
-  * Atom 1.12.4
+  * Text Editor - Atom 1.12.4
 
 
 ## Features
@@ -35,3 +35,4 @@ PUT DESCRIPTION OF GAME HERE.
 
   * Make it responsive
   * Store highest score from multiple sessions
+  * Optimize images
