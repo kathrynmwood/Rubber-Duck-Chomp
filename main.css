@@ -96,15 +96,19 @@ button {
 }
 
 @keyframes duckMoves {
-  0%   {left:0px;}
-  25%  {left:200px;}
-  50%  {left:200px;}
-  75%  {left:0px;}
-  100% {left:0px;}
+  0%   {left: 0%;}
+  25%  {left: 200%;}
+  50%  {left: 200%;}
+  75%  {left: 0%;}
+  100% {left: 0%;}
 }
 
 
 @media (max-width: 560px) {
+  html {
+    min-height: 100%;
+  }
+
   h1 {
     font-size: 2em;
   }
