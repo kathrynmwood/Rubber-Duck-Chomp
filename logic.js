@@ -70,7 +70,7 @@ function beginGame() {
         console.log(duckGrid);
         changeDuckState(duckGrid);
         onTimer();
-        document.getElementById('start').innerHTML = 'Shoot the ducks!';
+        document.getElementById('start').innerHTML = 'Click to chomp!';
         currentScore = 0;
         document.getElementById('yourScore').innerHTML = 'Your Score: ' + currentScore;
     }
@@ -87,7 +87,7 @@ function onTimer() {
         timerRunning = true;
         setTimeout(onTimer, 1000);
         secondsAlloted--;
-        playGameSound();
+        playJaws();
     }
     document.getElementById('mycounter').innerHTML = 'Seconds Remaining: ' + secondsAlloted;
 }
@@ -105,7 +105,6 @@ function shootDuck(shotDuckIndex) {
             console.log("Current Score", currentScore);
             displayScore();
             playSqueakSound();
-            playShotSound();
         }
     }
 }

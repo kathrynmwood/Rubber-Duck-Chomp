@@ -44,3 +44,12 @@ epicBattle.src = "sounds/Epic-battle-music-grzegorz-majcherczyk-heroica/Epic-bat
 function playGameSound() {
     epicBattle.play();
 }
+
+// Play jaws theme song mp3
+
+var jaws = new Audio();
+jaws.src = "sounds/Jaws-theme-song/Jaws-theme-song.mp3";
+
+function playJaws() {
+  jaws.play();
+}
