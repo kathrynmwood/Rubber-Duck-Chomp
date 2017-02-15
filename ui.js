@@ -17,6 +17,40 @@ function displayScore() {
     document.getElementById("yourScore").innerHTML = "Your Score: " + currentScore;
 }
 
+// High Scoreboard
+
+function updateScoreBoard() {
+    // check if highscore, get initials, dom manipulate
+    for (let i = 0; i < highScoreArray.length; i++) {
+      if (currentScore > highScoreArray[i]) {
+        highScoreArray[i] = currentScore;
+        initials[i] = prompt("You set a new high score! What are your initials");
+        // highScoreArray.sort(function(a, b) { return a - b });
+        return;
+
+          }
+        }
+      }
+        // dom manipulation here
+
+//
+//         return;
+//       } else if (currentScore > highScoreArray[1])  {
+//         initials[1] = prompt("You set a new high score! What are your initials");
+//         highScoreArray[1] = currentScore;
+//         return;
+//       } else if (currentScore > highScoreArray[2]) {
+//         initials[2] = prompt("You set a new high score! What are your initials");
+//         highScoreArray[2] = currentScore;
+//         return;
+//       }
+//     }
+// }
+// if checks if it's a high score
+// if so, add it
+// sort the array
+// chop off the end if less than 3
+
 // Play gunshot mp3
 
 var gunshot = new Audio();

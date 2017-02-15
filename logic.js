@@ -6,9 +6,15 @@ var currentScore = 0;
 
 var highScore = 0;
 
+var highScoreArray = [0, 0, 0];
+
+var initials = [null, null, null];
+
 var secondsAlloted = 30;
 
 var timerRunning = false;
+
+
 
 // Generate random number between 0 and 8
 
@@ -26,7 +32,7 @@ function newRandomDuck() {
 
 // Switch one grid item to true
 
-function changeState(grid) {
+function changeState(grid) { // Change name of function to changeBolean
     if (grid[randomDuck] === false) {
         grid[randomDuck] = true;
     } else if (grid[randomDuck] === true) {
